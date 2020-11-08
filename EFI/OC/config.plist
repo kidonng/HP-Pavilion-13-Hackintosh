@@ -7,6 +7,14 @@
 		<key>Add</key>
 		<array>
 			<dict>
+				<key>Enabled</key>
+				<true/>
+				<key>Comment</key>
+				<string>SSDT-BATT.aml</string>
+				<key>Path</key>
+				<string>SSDT-BATT.aml</string>
+			</dict>
+			<dict>
 				<key>Comment</key>
 				<string>SSDT-AWAC.aml</string>
 				<key>Path</key>
@@ -49,46 +57,18 @@
 		</array>
 		<key>Delete</key>
 		<array>
-			<dict>
-				<key>All</key>
-				<false/>
-				<key>Comment</key>
-				<string>Delete CpuPm</string>
-				<key>Enabled</key>
-				<false/>
-				<key>OemTableId</key>
-				<data>Q3B1UG0AAAA=</data>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>U1NEVA==</data>
-			</dict>
-			<dict>
-				<key>All</key>
-				<false/>
-				<key>Comment</key>
-				<string>Delete Cpu0Ist</string>
-				<key>Enabled</key>
-				<false/>
-				<key>OemTableId</key>
-				<data>Q3B1MElzdAA=</data>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>U1NEVA==</data>
-			</dict>
 		</array>
 		<key>Patch</key>
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>_Q11 to XQ11</string>
+				<string>UPBI to XPBI</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
-				<data>X1ExMQ==</data>
+				<data>VVBCSQA=</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -96,7 +76,7 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>WFExMQ==</data>
+				<data>WFBCSQA=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -108,13 +88,13 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>_Q12 to XQ12</string>
+				<string>UPBS to XPBS</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
-				<data>X1ExMg==</data>
+				<data>VVBCUwA=</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -122,7 +102,59 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>WFExMg==</data>
+				<data>WFBCUwA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SMWR to XMWR</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>U01XUgQ=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WE1XUgQ=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SMRD to XMRD</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>U01SRAQ=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WE1SRAQ=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -667,6 +699,24 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooRMI.kext/Contents/PlugIns/RMISMBus.kext</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>SMCBatteryManager.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/SMCBatteryManager</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
 			</dict>
 		</array>
 		<key>Block</key>
