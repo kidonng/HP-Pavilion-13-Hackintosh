@@ -13,3 +13,8 @@
 - http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1824403
 - http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1856395
 - http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1858446
+
+## License
+
+- Original content (such as [`SSDT-BATT`](Source/SSDT-BATT.dsl)): [MIT](https://opensource.org/licenses/MIT)
+- Third-paty components (Bootloader, Kext, etc.) : Please refer to the source of each component for license info
