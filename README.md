@@ -1,7 +1,60 @@
-# HP Pavilion 13 Hackintosh
+# 🍎 [HP Pavilion 13](https://support.hp.com/us-en/document/c06145752) Hackintosh
 
-- [Spec](https://support.hp.com/us-en/document/c06145752)
-- [Status](https://www.notion.so/Hackintosh-b0fbc08873fd4bfe9e64ae13ed043884)
+## Status
+
+OpenCore `0.6.3`, macOS `11.0.1`
+
+- [x]  CPU, Memory and Disk
+- Graphics
+    - [x]  Basic
+    - [x]  Hardware acceleration
+- Wireless
+    - [x]  Wi-Fi
+    - [x]  Bluetooth
+- Keyboard
+    - [x]  Basic
+    - [x]  Meta keys
+        - Ctrl → Control
+        - Win → Option
+        - Alt → Command
+    - [x]  Brightness keys
+    - [x]  Backlight key
+    - [x]  Volume keys
+    - [x]  Media keys
+- Touchpad
+    - [x]  Basic
+    - [x]  Gestures
+- Power
+    - [x]  Battery status
+    - [x]  Sleep
+    - [x]  Wake
+    - [ ]  Hibernate (untested)
+- Devices
+    - [x]  Sound
+    - [x]  Camera
+    - [x]  Mic
+- Ports
+    - [x]  USB-A
+    - [x]  USB-C
+    - [ ]  HDMI
+    - [ ]  Headphone Jack Combo (untested)
+    - [ ]  Card reader (untested)
+
+## Screenshots
+
+![](Screenshots/11.0-1.png)
+
+![](Screenshots/11.0-2.png)
+
+![](Screenshots/10.15-1.png)
+
+![](Screenshots/10.15-2.png)
+
+## Notes
+
+- **Set `SecureBootModel` to `Disabled` when installing macOS 11.0**. If the installtion stuck on `AirportI`, you may need to force reboot.
+- Flip **Command** and **Option** keys for natural shortcuts
+- Flip **Command** and **Control** keys for Windows shortcuts compatibility
 
 ## Credits
 
@@ -17,4 +70,4 @@
 ## License
 
 - Original content (such as [`SSDT-BATT`](Source/SSDT-BATT.dsl)): [MIT](https://opensource.org/licenses/MIT)
-- Third-paty components (Bootloader, Kext, etc.) : Please refer to the source of each component for license info
+- Third-paty components (Bootloader, Kext, etc.) : Refer to the source of each component
