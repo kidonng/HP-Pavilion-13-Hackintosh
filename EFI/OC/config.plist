@@ -770,7 +770,7 @@
 			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
-			<true/>
+			<false/>
 			<key>LegacyCommpage</key>
 			<false/>
 			<key>PanicNoKextDump</key>
@@ -780,7 +780,7 @@
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
@@ -809,7 +809,7 @@
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>External</string>
+			<string>Builtin</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -846,7 +846,7 @@
 			<key>AllowNvramReset</key>
 			<true/>
 			<key>AllowSetDefault</key>
-			<true/>
+			<false/>
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
@@ -897,7 +897,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100</string>
+				<string>debug=0x100 keepsyms=1</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
@@ -1019,7 +1019,7 @@
 			<key>AudioSupport</key>
 			<true/>
 			<key>MinimumVolume</key>
-			<integer>68</integer>
+			<integer>20</integer>
 			<key>PlayChime</key>
 			<true/>
 			<key>VolumeAmplifier</key>
@@ -1031,7 +1031,6 @@
 		<array>
 			<string>HfsPlus.efi</string>
 			<string>OpenRuntime.efi</string>
-			<string>OpenCanopy.efi</string>
 			<string>AudioDxe.efi</string>
 		</array>
 		<key>Input</key>
@@ -1130,13 +1129,13 @@
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
-			<true/>
+			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>ReservedMemory</key>
 		<array>
