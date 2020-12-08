@@ -4,7 +4,7 @@
 
 ## Status
 
-OpenCore `0.6.3`, macOS `11.0.1`, BIOS `F.10`
+OpenCore `0.6.4`, macOS `11.0.1`, BIOS `F.10`
 
 - [x]  CPU, Memory and Disk
 - Graphics
@@ -57,13 +57,10 @@ OpenCore `0.6.3`, macOS `11.0.1`, BIOS `F.10`
 - Default meta keys mapping:
 
   - Ctrl → Control
-  - Win → Option
-  - Alt → Command
-
-  ---
-
-  - Flip **Command** and **Option** keys for natural shortcuts.
-  - Flip **Command** and **Control** keys for Windows shortcuts compatibility.
+  - Win → Command
+  - Alt → Option
+  
+  Flip **Command** and **Control** keys for Windows shortcuts compatibility.
 
 ## Credits
 
