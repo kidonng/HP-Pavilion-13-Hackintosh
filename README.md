@@ -4,7 +4,7 @@
 
 ## Status
 
-OpenCore `0.6.4`, macOS `11.0.1`, BIOS `F.10`
+OpenCore `0.6.4`, macOS `11.1 (20C69)`, BIOS `F.10`
 
 - [x]  CPU, Memory and Disk
 - Graphics
@@ -53,7 +53,7 @@ OpenCore `0.6.4`, macOS `11.0.1`, BIOS `F.10`
 ## Notes
 
 - **Set `AppleXcpmCfgLock` to `true` if you haven't unlocked CFG Lock**.
-- **Set `SecureBootModel` to `Disabled` when installing macOS 11.0**. If the installtion stuck on `AirportI`, you may need to force reboot.
+- **Set `SecureBootModel` to `Disabled` when installing macOS 11**. If the installtion stuck on `AirportI`, you may need to force reboot.
 - Default meta keys mapping:
 
   - Ctrl → Control
