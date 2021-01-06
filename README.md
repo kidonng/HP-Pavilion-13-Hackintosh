@@ -4,7 +4,7 @@
 
 ## Status
 
-OpenCore `0.6.4`, macOS `11.1 (20C69)`, BIOS `F.10`
+OpenCore `0.6.5`, macOS `11.1 (20C69)`, BIOS `F.10`
 
 - [x]  CPU, Memory and Disk
 - Graphics
