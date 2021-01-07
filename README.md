@@ -6,39 +6,48 @@
 
 OpenCore `0.6.5`, macOS `11.1 (20C69)`, BIOS `F.10`
 
-- [x]  CPU, Memory and Disk
+- [x] CPU, Memory and Disk
 - Graphics
-    - [x]  Basic
-    - [x]  Hardware acceleration
+  - [x] Basic
+  - [x] Hardware acceleration
 - Wireless
-    - [x]  Wi-Fi
-    - [x]  Bluetooth
+
+  - [x] Wi-Fi
+  - [x] Bluetooth
+
+    Known issue: Bluetooth may randomly stop working. Disable and enable it again if this happens.
+
 - Keyboard
-    - [x]  Basic
-    - [x]  Meta keys
-    - [x]  Brightness keys
-    - [x]  Backlight key
-    - [x]  Volume keys
-    - [x]  Media keys
+  - [x] Basic
+  - [x] Meta keys
+  - [x] Brightness keys
+  - [x] Backlight key
+  - [x] Volume keys
+  - [x] Media keys
 - Touchpad
-    - [x]  Basic
-    - [x]  Gestures
+  - [x] Basic
+  - [x] Gestures
+
+    Known issue: Tap to click may randomly stop working at boot. Restarting or going to sleep and wake again may resolve the problem.
+
+    This is said to be [fixed in VoodooRMI 1.3](https://github.com/VoodooSMBus/VoodooRMI/releases/tag/1.3), unfortunately it isn't.
+
 - Power
-    - [x]  Battery status
-    - [x]  Sleep
-    - [x]  Wake
-    - [ ]  Hibernate (untested)
+  - [x] Battery status
+  - [x] Sleep
+  - [x] Wake
+  - [ ] Hibernate (untested)
 - Devices
-    - [x]  Sound
-    - [x]  Camera
-    - [x]  Mic
+  - [x] Sound
+  - [x] Camera
+  - [x] Mic
 - Ports
-    - [x]  USB-A
-    - [x]  USB-C
-    - [ ]  HDMI
-    - [ ]  Headphone Jack Combo (untested)
-    - [ ]  Card reader (untested)
-    - [ ]  ~~Fingerprint~~ (impossible)
+  - [x] USB-A
+  - [x] USB-C
+  - [ ] HDMI
+  - [ ] Headphone Jack Combo (untested, possibly broken)
+  - [ ] Card reader (untested, possibly broken)
+  - [ ] ~~Fingerprint~~ (impossible)
 
 ## Screenshots
 
@@ -59,7 +68,7 @@ OpenCore `0.6.5`, macOS `11.1 (20C69)`, BIOS `F.10`
   - Ctrl → Control
   - Win → Command
   - Alt → Option
-  
+
   Flip **Command** and **Control** keys for Windows shortcuts compatibility.
 
 ## Credits
