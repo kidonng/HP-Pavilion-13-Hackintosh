@@ -1,10 +1,16 @@
-# 🍎 [HP Pavilion 13](https://support.hp.com/us-en/document/c06145752) Hackintosh
+# 🍎 HP Pavilion 13 Hackintosh
 
 **READ THE NOTES BEFORE USING THE EFI**
 
+## Specs
+
+- Device: [HP Pavilion 13-an0002tu](https://support.hp.com/us-en/document/c06145752)
+- CPU: [i5-8265U](https://ark.intel.com/content/www/us/en/ark/products/149088/intel-core-i5-8265u-processor-6m-cache-up-to-3-90-ghz.html)
+- Board: HP 84C5
+
 ## Status
 
-OpenCore `0.6.6`, macOS `11.2 (20D64)`, BIOS `F.10`
+OpenCore `0.6.6`, macOS `11.3 (20E5186d)`, BIOS `F.12`
 
 - [x] CPU, Memory and Disk
 - Graphics
@@ -39,6 +45,7 @@ OpenCore `0.6.6`, macOS `11.2 (20D64)`, BIOS `F.10`
   - [ ] Hibernate (untested)
 - Devices
   - [x] Sound
+    - [x] [Boot-chime](https://dortania.github.io/OpenCore-Post-Install/cosmetic/gui.html#setting-up-boot-chime-with-audiodxe)
   - [x] Camera
   - [x] Mic
 - Ports
@@ -51,17 +58,14 @@ OpenCore `0.6.6`, macOS `11.2 (20D64)`, BIOS `F.10`
 
 ## Screenshots
 
-![Screenshot 1 of macOS 11.0](Screenshots/11.0-1.png)
+![Screenshot of about](Screenshots/about.png)
 
-![Screenshot 2 of macOS 11.0](Screenshots/11.0-2.png)
-
-![Screenshot 1 of macOS 10.15](Screenshots/10.15-1.png)
-
-![Screenshot 2 of macOS 10.15](Screenshots/10.15-2.png)
+![Screenshot of neofetch](Screenshots/neofetch.png)
 
 ## Notes
 
 - **Set `AppleXcpmCfgLock` to `true` if you haven't unlocked CFG Lock**.
+- **Use your own `PlatformInfo` values (`Serial`, `ROM`, etc.)**.
 - **Set `SecureBootModel` to `Disabled` when installing macOS 11**. If the installtion stuck on `AirportI`, you may need to force reboot.
 - Default meta keys mapping:
 
