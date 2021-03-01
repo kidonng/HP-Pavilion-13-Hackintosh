@@ -13,6 +13,11 @@
 OpenCore `0.6.6`, macOS `11.3 (20E5186d)`, BIOS `F.12`
 
 - [x] CPU, Memory and Disk
+  - CPUFriendDataProvider
+    - LFM: `08`
+    - EPP: `90`
+    - Perf Bias: `05`
+    - Additional Energy Savings Options: disabled
 - Graphics
   - [x] Basic
   - [x] Hardware acceleration
