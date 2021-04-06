@@ -10,7 +10,7 @@
 
 ## Status
 
-OpenCore `0.6.7`, macOS `11.3 (20E5186d)`, BIOS `F.12`
+OpenCore `0.6.8`, macOS `11.3 (20E5224a)`, BIOS `F.12`
 
 - [x] CPU, Memory and Disk
   - CPUFriendDataProvider
