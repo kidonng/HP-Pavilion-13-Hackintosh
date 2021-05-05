@@ -10,56 +10,39 @@
 
 ## Status
 
-OpenCore `0.6.8`, macOS `11.3 (20E5224a)`, BIOS `F.12`
+OpenCore `0.6.9`, macOS `11.4 (20F5055c)`, BIOS `F.12`
 
-- [x] CPU, Memory and Disk
-  - CPUFriendDataProvider
-    - LFM: `08`
-    - EPP: `90`
-    - Perf Bias: `05`
-    - Additional Energy Savings Options: disabled
-- Graphics
-  - [x] Basic
-  - [x] Hardware acceleration
-- Wireless
+- [x] Boot
+- [x] GPU acceleration
+- [x] Wi-Fi
+- [x] Bluetooth
 
-  - [x] Wi-Fi
-  - [x] Bluetooth
+  **Known issue**:
 
-    Known issue: Bluetooth may randomly stop working. Disable and enable it again if this happens.
+  1. Bluetooth may randomly stop working. Disable and enable it again if this happens.
+  2. Some devices (e.g. mouse) won't connect in macOS 11.4.
 
-- Keyboard
-  - [x] Basic
-  - [x] Meta keys
-  - [x] Brightness keys
-  - [x] Backlight key
-  - [x] Volume keys
-  - [x] Media keys
-- Touchpad
-  - [x] Basic
-  - [x] Gestures
+- [x] Keyboard
+- [x] Touchpad & gestures
 
-    Known issue: Tap to click may randomly stop working at boot. Restarting or going to sleep and wake again may resolve the problem.
+  **Known issue**: *Tap to click* may not work at boot. Restarting or going to sleep and wake again may resolve the problem.
 
-    This is said to be [fixed in VoodooRMI 1.3](https://github.com/VoodooSMBus/VoodooRMI/releases/tag/1.3), unfortunately it isn't.
+  This is said to be [fixed in VoodooRMI 1.3](https://github.com/VoodooSMBus/VoodooRMI/releases/tag/1.3), unfortunately it isn't.
 
-- Power
-  - [x] Battery status
-  - [x] Sleep
-  - [x] Wake
-  - [ ] Hibernate (untested)
-- Devices
-  - [x] Sound
-    - [x] [Boot-chime](https://dortania.github.io/OpenCore-Post-Install/cosmetic/gui.html#setting-up-boot-chime-with-audiodxe)
-  - [x] Camera
-  - [x] Mic
-- Ports
-  - [x] USB-A
-  - [x] USB-C
-  - [ ] HDMI
-  - [ ] Headphone Jack Combo (untested, possibly broken)
-  - [ ] Card reader (untested, possibly broken)
-  - [ ] ~~Fingerprint~~ (impossible)
+- [x] Battery status
+- [x] Sleep/wake
+
+  **Known issues**: random sleep wake failures after sleeping for hours.
+
+- [ ] Hibernate (untested)
+- [x] Sound
+- [x] Camera
+- [x] Mic
+- [x] USB
+- [ ] HDMI
+- [ ] Headphone Jack Combo (untested, possibly broken)
+- [ ] Card reader (untested, possibly broken)
+- [ ] ~~Fingerprint~~ (impossible)
 
 ## Screenshots
 
