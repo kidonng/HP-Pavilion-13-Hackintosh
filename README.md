@@ -10,30 +10,25 @@
 
 ## Status
 
-OpenCore `0.7.0`, macOS `11.5 (20G5033c)`, BIOS `F.12`
+OpenCore `0.7.1`, macOS `12.0 (21A5268h)`, BIOS `F.12`
 
 - [x] Boot
 - [x] GPU acceleration
 - [x] Wi-Fi
+
+  **Known issue:** Have trouble connecting to some hotspots, e.g. 2.4GHz or [iPhone](https://github.com/OpenIntelWireless/itlwm/issues/310).
+
 - [x] Bluetooth
 
-  **Known issue**:
-
-  1. Bluetooth may randomly stop working. Disable and enable it again if this happens.
-  2. Some devices (e.g. mouse) won't connect in macOS 11.4.
+  **Known issue**: [Turning off bluetooth will make it stop working](https://github.com/acidanthera/BrcmPatchRAM/pull/12). Workaround: kill `bluetoothd`.
 
 - [x] Keyboard
 - [x] Touchpad & gestures
 
-  **Known issue**: *Tap to click* may not work at boot. Restarting or going to sleep and wake again may resolve the problem.
-
-  This is said to be [fixed in VoodooRMI 1.3](https://github.com/VoodooSMBus/VoodooRMI/releases/tag/1.3), unfortunately it isn't.
+  **Known issue**: _Tap to click_ may not work at boot or after waking up. Work around: restarting or waking again may help.
 
 - [x] Battery status
 - [x] Sleep/wake
-
-  **Known issues**: random sleep wake failures after sleeping for hours.
-
 - [ ] Hibernate (untested)
 - [x] Sound
 - [x] Camera
@@ -52,16 +47,13 @@ OpenCore `0.7.0`, macOS `11.5 (20G5033c)`, BIOS `F.12`
 
 ## Notes
 
-- **Set `AppleXcpmCfgLock` to `true` if you haven't unlocked CFG Lock**.
-- **Use your own `PlatformInfo` values (`Serial`, `ROM`, etc.)**.
-- **Set `SecureBootModel` to `Disabled` when installing macOS 11**. If the installtion stuck on `AirportI`, you may need to force reboot.
-- Default meta keys mapping:
+- **Set `AppleXcpmCfgLock` to `true` if CFG lock is not unlocked**.
 
-  - Ctrl → Control
-  - Win → Command
-  - Alt → Option
+  Note that certain actions such as performing security reset in BIOS will reset CFG lock.
 
-  Flip **Command** and **Control** keys for Windows shortcuts compatibility.
+- **Set `SecureBootModel` to `Disabled` when installing macOS**. You can revert it to `Default` after installation.
+- **Use different `PlatformInfo` values (`Serial`, `ROM`, etc.)**
+- If macOS installation stuck on messages beginning with `AirportI`, try force rebooting.
 
 ## Credits
 
