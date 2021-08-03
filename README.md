@@ -10,7 +10,7 @@
 
 ## Status
 
-OpenCore `0.7.1`, macOS `12.0 (21A5268h)`, BIOS `F.12`
+OpenCore `0.7.2`, macOS `12.0 (21A5294g)`, BIOS `F.12`
 
 - [x] Boot
 - [x] GPU acceleration
@@ -51,7 +51,6 @@ OpenCore `0.7.1`, macOS `12.0 (21A5268h)`, BIOS `F.12`
 
   Note that certain actions such as performing security reset in BIOS will reset CFG lock.
 
-- **Set `SecureBootModel` to `Disabled` when installing macOS**. You can revert it to `Default` after installation.
 - **Use different `PlatformInfo` values (`Serial`, `ROM`, etc.)**
 - If macOS installation stuck on messages beginning with `AirportI`, try force rebooting.
 
