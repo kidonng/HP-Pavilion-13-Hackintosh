@@ -1,6 +1,6 @@
 # 🍎 HP Pavilion 13 Hackintosh
 
-**READ THE NOTES BEFORE USING THE EFI**
+**READ THE [NOTES](#notes) BEFORE USING THE EFI**
 
 ## Specs
 
@@ -10,7 +10,7 @@
 
 ## Status
 
-OpenCore `0.7.2`, macOS `12.0 (21A5294g)`, BIOS `F.12`
+OpenCore `0.7.2`, macOS `12.0 (21A5304g)`, BIOS `F.12`
 
 - [x] Boot
 - [x] GPU acceleration
