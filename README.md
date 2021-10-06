@@ -10,7 +10,7 @@
 
 ## Status
 
-OpenCore `0.7.3`, macOS `12.0 (21A5506j)`, BIOS `F.12`
+OpenCore `0.7.4`, macOS `12.0 (21A5534d)`, BIOS `F.12`
 
 - [x] Boot
 - [x] GPU acceleration
