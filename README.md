@@ -14,27 +14,21 @@ OpenCore `0.7.5`, macOS `12.0.1 (21A559)`, BIOS `F.13`
 
 - [x] Boot
 - [x] GPU acceleration
-- [x] Wi-Fi
-
-  **Known issue:** Have trouble connecting to some hotspots, e.g. 2.4GHz or [iPhone](https://github.com/OpenIntelWireless/itlwm/issues/310).
-
-- [x] Bluetooth
-
-  **Known issue**: [Turning off bluetooth will make it stop working](https://github.com/acidanthera/BrcmPatchRAM/pull/12). Workaround: kill `bluetoothd`.
-
+- [x] Wi-Fi ([with minor issues)](https://github.com/OpenIntelWireless/itlwm/issues)
+- [x] Bluetooth ([with minor issues](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues))
 - [x] Keyboard
 - [x] Touchpad & gestures
 
   **Known issue**: _Tap to click_ may not work at boot or after waking up. Work around: restarting or waking again may help.
 
 - [x] Battery status
-- [x] Sleep/wake
+- [x] Sleep/wake (generally stable)
 - [ ] Hibernate (untested)
 - [x] Sound
 - [x] Camera
 - [x] Mic
 - [x] USB
-- [x] HDMI (thanks to [@samchan1995](https://github.com/samchan1995))
+- [x] HDMI (patch provided by [@samchan1995](https://github.com/samchan1995))
 - [x] Headphone Jack Combo (reported by Matt Richardson)
 - [ ] Card reader (untested, possibly broken)
 - [ ] ~~Fingerprint~~ (impossible)
