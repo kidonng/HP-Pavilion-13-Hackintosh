@@ -10,7 +10,7 @@
 
 ## Status
 
-OpenCore `0.7.4`, macOS `12.0 (21A5534d)`, BIOS `F.12`
+OpenCore `0.7.5`, macOS `12.0.1 (21A559)`, BIOS `F.13`
 
 - [x] Boot
 - [x] GPU acceleration
@@ -35,7 +35,7 @@ OpenCore `0.7.4`, macOS `12.0 (21A5534d)`, BIOS `F.12`
 - [x] Mic
 - [x] USB
 - [x] HDMI (thanks to [@samchan1995](https://github.com/samchan1995))
-- [ ] Headphone Jack Combo (untested, possibly broken)
+- [x] Headphone Jack Combo (reported by Matt Richardson)
 - [ ] Card reader (untested, possibly broken)
 - [ ] ~~Fingerprint~~ (impossible)
 
