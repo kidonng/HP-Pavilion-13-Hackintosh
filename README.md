@@ -1,6 +1,14 @@
 # 🍎 HP Pavilion 13 Hackintosh
 
-**READ THE [NOTES](#notes) BEFORE USING THE EFI**
+**PLEASE READ THE [NOTES](#notes) FIRST**
+
+This project tries to provide an open and working macOS setup for **HP Pavilion 13** laptop based on [OpenCore](https://github.com/acidanthera/OpenCorePkg), while achieving the following goals:
+
+- Support as many features as we can
+- Align with [`Sample.plist`](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Sample.plist) as much as possible
+- Use as little [`Quirks`](https://dortania.github.io/docs/release/Configuration.html#:~:text=Quirks%20provides%20support%20for%20specific%20workarounds.) as feasible
+
+Note that this laptop comes in many variants, this EFI is created on the specs shown below, your miles may vary.
 
 ## Specs
 
@@ -45,8 +53,16 @@ OpenCore `0.7.5`, macOS `12.0.1 (21A559)`, BIOS `F.13`
 
   Note that certain actions such as performing security reset in BIOS will reset CFG lock.
 
-- **Use different `PlatformInfo` values (`Serial`, `ROM`, etc.)**
-- If macOS installation stuck on messages beginning with `AirportI`, try force rebooting.
+- **Use your own `MLB`, `ROM`, `SystemSerialNumber` and `SystemUUID` values.**
+
+## Anatomy
+
+This section provides an exhaustive explanation of [`EFI/OC`](EFI/OC).
+
+- `ACPI`
+  - `SSDT-AWAC`: [fix system clock](https://dortania.github.io/Getting-Started-With-ACPI/Universal/awac.html) (created using [SSDTTime](https://github.com/corpnewt/SSDTTime))
+  - `SSDT-BATT`: fix battery status
+  - (TODO)
 
 ## Credits
 
@@ -63,4 +79,4 @@ OpenCore `0.7.5`, macOS `12.0.1 (21A559)`, BIOS `F.13`
 ## License
 
 - Original content (such as [`SSDT-BATT`](Source/SSDT-BATT.dsl)): [MIT](https://opensource.org/licenses/MIT)
-- Third-paty components (Bootloader, Kext, etc.) : Refer to the source of each component
+- Third-paty components (Bootloader, Kext, etc.): Refer to the source of each component
