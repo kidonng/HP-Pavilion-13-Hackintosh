@@ -18,7 +18,7 @@ Note that this laptop comes in many variants, this EFI is created on the specs s
 
 ## Status
 
-OpenCore `0.7.5`, macOS `12.0.1 (21A559)`, BIOS `F.13`
+OpenCore `0.7.9`, macOS `12.2.1 (21D62)`, BIOS `F.13`
 
 -   [x] Boot
 -   [x] GPU acceleration
