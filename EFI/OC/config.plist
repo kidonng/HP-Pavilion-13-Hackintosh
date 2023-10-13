@@ -267,7 +267,7 @@
 				<data>AAAwAQ==</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
-				<key>enable-backlight-registers-fix</key>
+				<key>enable-backlight-registers-alternative-fix</key>
 				<data>AQAAAA==</data>
 				<key>enable-backlight-smoother</key>
 				<data>AQAAAA==</data>
